@@ -12,9 +12,9 @@ const getIPFree = () => {
             if (!err && response.statusCode == 200) {                
                 try {
                     const $ = cheerio.load(body);
-                    const ip = $('#proxylisttable tbody tr').last().find('td:nth-child(1)').html();
-                    const port = $('#proxylisttable tbody tr').last().find('td:nth-child(2)').html();
-                    const isHttps = $('#proxylisttable tbody tr').last().find('td:nth-child(7)').html();
+                    const ip = $('#proxylisttable tbody tr').first().find('td:nth-child(1)').html();
+                    const port = $('#proxylisttable tbody tr').first().find('td:nth-child(2)').html();
+                    const isHttps = $('#proxylisttable tbody tr').first().find('td:nth-child(7)').html();
                     resolve(format({ip, port, isHttps}))
                 } catch (error) {
                     reject(error);
