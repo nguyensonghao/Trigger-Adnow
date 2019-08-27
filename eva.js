@@ -3,3 +3,7 @@ $('#ADS_130_15s').html('<div id="SC_TBlock_681966" class="SC_TBlock">loading...<
     id : "681966",
     domain : "n.ads1-adnow.com"
 })
+
+setTimeout(() => {
+    $('.itemAddBlock:nth-child(1) a img').click()
+}, 10000);
