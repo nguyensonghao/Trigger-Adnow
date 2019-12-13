@@ -11,7 +11,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "i": "^0.3.6",
-    "npm": "^6.11.2",
+    "npm": "^6.13.4",
     "puppeteer": "^1.19.0",
     "request": "^2.88.0"
   }
